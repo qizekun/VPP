@@ -1,9 +1,17 @@
 # VPP⚡
 
-> [**VPP: Efficient Conditional 3D Generation via Voxel-Point Progressive Representation**](https://arxiv.org/abs/2307.16605) <br>
+> [**VPP: Efficient Conditional 3D Generation via Voxel-Point Progressive Representation**](https://arxiv.org/abs/2307.16605), **NeurIPS 2023** <br>
 > [Zekun Qi](https://scholar.google.com/citations?user=ap8yc3oAAAAJ), [Muzhou Yu](https://github.com/muzhou-yu), [Runpei Dong](https://runpeidong.com/) and [Kaisheng Ma](http://group.iiis.tsinghua.edu.cn/~maks/leader.html) <br>
 
 [arXiv](https://arxiv.org/abs/2307.16605)
+
+## News
+
+- 🎆 Sep, 2023: [**VPP**](https://arxiv.org/abs/2307.16605) is accepted to NeurIPS 2023.
+- 💥 Aug, 2023: Check out our previous work [**ACT**](https://arxiv.org/abs/2212.08320) and [**ReCon**](https://arxiv.org/abs/2302.02318) about 3D represent learning, which have been accepted by ICLR & ICML 2023.
+
+----
+
 
 This repository contains the code release of VPP⚡: Efficient Conditional 3D Generation via Voxel-Point Progressive Representation.
 
@@ -12,10 +20,6 @@ This repository contains the code release of VPP⚡: Efficient Conditional 3D Ge
 </div>
 
 Code will be coming soon.
-
-## News
-
-- 💥 Aug, 2023: Check out our previous work [**ACT**](https://arxiv.org/abs/2212.08320) and [**ReCon**](https://arxiv.org/abs/2302.02318) about 3D represent learning, which have been accepted by ICLR & ICML 2023.
 
 ## Contact
 
@@ -34,10 +38,11 @@ This codebase is built upon [Point-MAE](https://github.com/Pang-Yatian/Point-MAE
 If you find our work useful in your research, please consider citing:
 
 ```latex
-@article{vpp2023,
-  title={VPP: Efficient Conditional 3D Generation via Voxel-Point Progressive Representation},
-  author={Qi, Zekun and Yu, Muzhou and Dong, Runpei and Ma, Kaisheng},
-  journal={arXiv preprint arXiv:2307.16605},
-  year={2023}
+@inproceedings{vpp2023,
+title={{VPP}: Efficient Universal 3D Generation via Voxel-Point Progressive Representation},
+author={Qi, Zekun and Yu, Muzhou and Dong, Runpei and Ma, Kaisheng},
+booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
+year={2023},
+url={https://openreview.net/forum?id=etd0ebzGOG}
 }
 ```
