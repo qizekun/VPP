@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=$1 python main.py --config cfgs/point_upsampler.yaml --exp_name $2 --point

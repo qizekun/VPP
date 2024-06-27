@@ -1,0 +1,22 @@
+dataset:
+  val:
+    _base_: cfgs/dataset_configs/ShapeNet-13.yaml
+    others:
+      subset: test
+      npoints: 8192
+
+model:
+  NAME: VPPInference
+  group_size: 32
+
+  smooth_config:
+    trans_dim: 64
+    depth: 4
+    num_heads: 4
+    resolution: 24
+    # The path of the checkpoint of grid_smoother.
+    ckpt_path: grid_smoother.pth
+
+  with_color: FALSE
+
+total_bs: 64

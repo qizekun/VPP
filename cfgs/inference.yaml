@@ -1,0 +1,40 @@
+model:
+  NAME: VPPInference
+  group_size: 32
+
+  vqgan_config:
+    resolution: 24
+    base_dim: 64
+    down_sample: 4
+    codebook_dim: 256
+    codebook_num: 2048
+    with_se: TRUE
+
+  voxel_config:
+    depth: 12
+    num_heads: 4
+    temperature: 2.0
+    cfg_ratio: 2.0
+    # The path of the checkpoint of voxel_generator.
+    ckpt_path: voxel_generator.pth
+
+  smooth_config:
+    trans_dim: 64
+    depth: 4
+    num_heads: 4
+    # The path of the checkpoint of grid_smoother.
+    ckpt_path: grid_smoother.pth
+
+  point_config:
+    trans_dim: 384
+    depth: 6
+    num_heads: 6
+    # The path of the checkpoint of point_upsampler.
+    ckpt_path: point_upsampler.pth
+
+  decoder_depth: 4
+  decoder_num_heads: 6
+  prompt_encoder: ViT-B/32
+  steps: 4
+  with_color: FALSE
+  npoints: 8192

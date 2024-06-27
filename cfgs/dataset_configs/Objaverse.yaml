@@ -1,0 +1,7 @@
+NAME: Objaverse
+DATA_PATH: data/ULIP-Objaverse_triplets
+N_POINTS: 8192
+PC_PATH: data/ULIP-Objaverse_triplets/objaverse_pc_parallel
+IMG_PATH: data/ULIP-Objaverse_triplets/render_images_split_100
+TEXT_PATH: data/ULIP-Objaverse_triplets/merged_data.json
+ratio: 1.0

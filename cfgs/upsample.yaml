@@ -1,0 +1,20 @@
+model :
+  NAME: VPPInference
+
+  # The upsample_rate is same as the group_size in the Point Upsampler training config.
+  group_size: 32
+
+  point_config:
+    trans_dim: 384
+    depth: 6
+    num_heads: 6
+    ckpt_path: point_upsampler.pth
+
+  decoder_depth: 4
+  decoder_num_heads: 6
+  text_encoder: ViT-B/32
+  with_color: FALSE
+
+# Downsample to init_num.
+init_num: 256
+upsample_rate: 32
